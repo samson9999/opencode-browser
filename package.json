@@ -1,6 +1,6 @@
 {
   "name": "opencode-browser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "OpenCode plugin that integrates Browser MCP for browser automation",
   "type": "module",
   "main": "index.ts",

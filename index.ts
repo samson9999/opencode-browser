@@ -18,8 +18,6 @@ import type { Plugin } from "@opencode-ai/plugin"
 export const BrowserMCPPlugin: Plugin = async (ctx) => {
   const { client, project } = ctx
   
-  console.log("Browser MCP Plugin initialized!")
-  
   // Track if we've informed the user about browser automation capabilities
   let browserCapabilitiesShown = false
   
@@ -28,7 +26,7 @@ export const BrowserMCPPlugin: Plugin = async (ctx) => {
      * Hook into session creation to inject browser automation context
      */
     "session.created": async ({ session }) => {
-      console.log(`Browser MCP Plugin: Session ${session.id} created`)
+      // Session created - ready for browser automation
     },
     
     /**
@@ -37,12 +35,7 @@ export const BrowserMCPPlugin: Plugin = async (ctx) => {
     "tool.execute.before": async (input, output) => {
       // Detect if a browser-related MCP tool is being called
       if (input.tool.startsWith("browsermcp_")) {
-        console.log(`Browser MCP Plugin: Executing browser tool: ${input.tool}`)
-        
-        // Log the tool execution for debugging
-        if (output.args) {
-          console.log(`Browser MCP Plugin: Tool arguments:`, JSON.stringify(output.args, null, 2))
-        }
+        // Browser tool execution starting
       }
     },
     
@@ -51,8 +44,6 @@ export const BrowserMCPPlugin: Plugin = async (ctx) => {
      */
     "tool.execute.after": async (input, output) => {
       if (input.tool.startsWith("browsermcp_")) {
-        console.log(`Browser MCP Plugin: Completed browser tool: ${input.tool}`)
-        
         // You can add custom post-processing here, such as:
         // - Logging results to a file
         // - Sending notifications
@@ -96,12 +87,12 @@ The Browser MCP integration has been used in this session. When resuming:
     event: async ({ event }) => {
       // Handle session idle - could be used to close browser tabs
       if (event.type === "session.idle") {
-        console.log("Browser MCP Plugin: Session is idle")
+        // Session is idle
       }
       
       // Handle session errors - could help debug browser automation issues
       if (event.type === "session.error") {
-        console.log("Browser MCP Plugin: Session error occurred")
+        // Session error occurred
       }
     }
   }
