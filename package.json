@@ -1,0 +1,41 @@
+{
+  "name": "opencode-browser",
+  "version": "1.0.0",
+  "description": "OpenCode plugin that integrates Browser MCP for browser automation",
+  "type": "module",
+  "main": "index.ts",
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "plugin",
+    "browser",
+    "browser-automation",
+    "mcp",
+    "model-context-protocol",
+    "automation",
+    "browser-control",
+    "web-automation",
+    "puppeteer-alternative"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "@opencode-ai/plugin": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jach/opencode-browser.git"
+  },
+  "homepage": "https://github.com/jach/opencode-browser#readme",
+  "bugs": {
+    "url": "https://github.com/jach/opencode-browser/issues"
+  },
+  "files": [
+    "index.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

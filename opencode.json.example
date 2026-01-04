@@ -1,0 +1,24 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "browsermcp": {
+      "type": "local",
+      "command": ["npx", "-y", "@browsermcp/mcp@latest"],
+      "enabled": true,
+      "environment": {
+        "BROWSER_MCP_DEBUG": "false"
+      }
+    }
+  },
+  "plugin": [
+    "opencode-browser"
+  ],
+  "agent": {
+    "browser-automation": {
+      "description": "Agent specialized in browser automation tasks",
+      "tools": {
+        "browsermcp_*": true
+      }
+    }
+  }
+}
