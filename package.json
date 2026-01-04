@@ -24,11 +24,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jach/opencode-browser.git"
+    "url": "git+https://github.com/michaljach/opencode-browser.git"
   },
-  "homepage": "https://github.com/jach/opencode-browser#readme",
+  "homepage": "https://github.com/michaljach/opencode-browser#readme",
   "bugs": {
-    "url": "https://github.com/jach/opencode-browser/issues"
+    "url": "https://github.com/michaljach/opencode-browser/issues"
   },
   "files": [
     "index.ts",

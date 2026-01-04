@@ -23,7 +23,7 @@ Thank you for your interest in contributing to this project! This guide will hel
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/jach/opencode-browser.git
+git clone https://github.com/michaljach/opencode-browser.git
 cd opencode-browser
 ```
 

@@ -75,7 +75,7 @@ That's it! OpenCode will automatically:
 - **Version**: 1.0.0
 - **Size**: 5.0 kB (packaged), 13.8 kB (unpacked)
 - **Files**: 4 (index.ts, README.md, LICENSE, package.json)
-- **Repository**: https://github.com/jach/opencode-browser
+- **Repository**: https://github.com/michaljach/opencode-browser
 - **License**: MIT
 
 ## Testing After Publication
@@ -128,7 +128,7 @@ npm publish
 ## Package URLs
 
 - **npm page**: https://www.npmjs.com/package/opencode-browser
-- **GitHub**: https://github.com/jach/opencode-browser
+- **GitHub**: https://github.com/michaljach/opencode-browser
 - **Install**: Just add to opencode.json: `"plugin": ["opencode-browser"]`
 
 ## Troubleshooting

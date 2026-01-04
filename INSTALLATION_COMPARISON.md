@@ -8,7 +8,7 @@ Users have to follow multiple steps:
 
 ### Step 1: Clone or Download
 ```bash
-git clone https://github.com/jach/opencode-browser.git
+git clone https://github.com/michaljach/opencode-browser.git
 cd opencode-browser
 ```
 
