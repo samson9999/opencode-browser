@@ -298,6 +298,16 @@ For issues and questions:
 
 ## Changelog
 
+### 1.0.2
+
+- Improve configuration documentation with clearer setup instructions
+- Remove obsolete documentation files
+- Remove console.log statements to prevent UI pollution
+- Remove opencode.json from tracking and add to gitignore
+- Clarify that both plugin and MCP configuration are required
+- Add release status documentation
+- Update GitHub repository URLs to michaljach/opencode-browser
+
 ### 1.0.0
 
 - Initial release
