@@ -57,7 +57,8 @@ export const BrowserMCPPlugin: Plugin = async (ctx) => {
      */
     "experimental.session.compacting": async (input, output) => {
       // Check if any browser automation was performed in this session
-      const hasBrowserTools = input.messages.some(msg => 
+      // Guard against input.messages being undefined
+      const hasBrowserTools = input.messages?.some(msg => 
         msg.content?.some(part => 
           part.type === "tool_use" && part.name?.startsWith("browsermcp_")
         )
