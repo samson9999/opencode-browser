@@ -9,16 +9,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Improved configuration documentation with clearer setup instructions
-- Updated GitHub repository URLs to michaljach/opencode-browser
 
 ### Removed
 - Removed obsolete documentation files
-- Removed console.log statements to prevent UI pollution
 - Removed opencode.json from tracking and added to gitignore
 
 ### Fixed
 - Clarified that both plugin and MCP configuration are required
 - Added release status documentation
+
+## [1.0.1] - 2025-12-XX
+
+### Changed
+- Updated GitHub repository URLs to michaljach/opencode-browser
+
+### Fixed
+- Removed console.log statements to prevent UI pollution
 
 ## [1.0.0] - 2025-12-XX
 
@@ -29,5 +35,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Tool execution logging
 - Event handling
 
-[1.0.2]: https://github.com/michaljach/opencode-browser/compare/v1.0.0...v1.0.2
+[1.0.2]: https://github.com/michaljach/opencode-browser/compare/v1.0.1...v1.0.2
+[1.0.1]: https://github.com/michaljach/opencode-browser/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/michaljach/opencode-browser/releases/tag/v1.0.0
